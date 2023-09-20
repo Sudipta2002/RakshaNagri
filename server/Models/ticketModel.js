@@ -11,31 +11,31 @@ const ticketSchema = new mongoose.Schema({
     },
     priority: {
         type: String,
-        required: true,
+        // required: true,
     },
     status: {
         type: String,
-        required: true,
+        // required: true,
     },
     category: {
         type: String,
-        required: true,
+        // required: true,
     },
     kind: {
         type: String,
-        required: true,
+        // required: true,
     },
     creatorId: {
         type: String,
-        required: true,
+        // required: true,
     },
     location: {
         type: String,
-        required: true,
+        // required: true,
     },
     latitude: {
         type: String,
-        required: true,
+        // required: true,
     },
     upvotes: {
         default: 0,
@@ -48,11 +48,12 @@ const ticketSchema = new mongoose.Schema({
     },
     longitude: {
         type: String,
-        required: true,
+        // required: true,
     },
-    images: [{
-        type: Buffer
-    }],
+    pic: {
+        type: String,
+        default: "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg",
+    }
 }, { timestamps: true });
 
 const Ticket = mongoose.model("Ticket", ticketSchema);

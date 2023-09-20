@@ -1,0 +1,23 @@
+.CardSection {
+    height: 100%;
+    /* background-color: #39445a; */
+    border-radius: 10px;
+    /* box-shadow: 0 7px 30px rgba(62, 9, 11, 0.3); */
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: hidden; */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 4vw;
+    /* color: aliceblue; */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
